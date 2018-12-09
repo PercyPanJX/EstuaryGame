@@ -13,9 +13,7 @@ After clicking the one showing a researcher. The player will go to a game called
 
 If the player clicks the icon showing a steward, they will go in the game "Estuary Management". They will monitor the health of the animals within the estuary as well as the water itself. They will use the mouse to select the appropriate tool for each problem that occurs. After 60 seconds, or if the health of the estuary drops too low, the game will end with a congratulations or a try again screen. 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6UJGbl0csoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Game Cover
 ![alt text](OutputImages/Cover.png)
