@@ -15,7 +15,7 @@ If the player clicks the icon showing a steward, they will go in the game "Estua
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6UJGbl0csoQ
 " target="_blank"><img src="http://img.youtube.com/vi/6UJGbl0csoQ/0.jpg" 
-alt="VEDIO" width="600" height="600" border="10" /></a>
+alt="VEDIO" width="1000" height="600" border="10" /></a>
 
 Game Cover
 ![alt text](OutputImages/Cover.png)
