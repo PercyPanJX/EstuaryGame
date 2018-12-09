@@ -18,17 +18,5 @@ Game Vedio:
 " target="_blank"><img src="http://img.youtube.com/vi/6UJGbl0csoQ/0.jpg" 
 alt="VEDIO" width="1000" height="600" border="10" /></a>
 
-Game Cover
-[![](![alt text](OutputImages/Cover.png))](#)
-
-In the educator game
-![alt text](OutputImages/Educational.png)
-
-In the researcher game
-![alt text](OutputImages/Research.png)
-
-In the manager game
-![alt text](OutputImages/Management.png)
-
 The whole program UML
 ![alt text](UML/UML.png)
