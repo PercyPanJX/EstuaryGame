@@ -22,7 +22,7 @@ Game Cover
 <a href="#">![alt text](OutputImages/Cover.png)
 
 In the educator game
-![alt text](OutputImages/Educational.png)
+![alt text]<(OutputImages/Educational.png)/></a>
 
 In the researcher game
 ![alt text](OutputImages/Research.png)
