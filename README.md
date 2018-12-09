@@ -19,7 +19,7 @@ Game Vedio:
 alt="VEDIO" width="1000" height="600" border="10" /></a>
 
 Game Cover
-[![]![alt text](OutputImages/Cover.png)](#)
+[![](![alt text](OutputImages/Cover.png))](#)
 
 In the educator game
 ![alt text](OutputImages/Educational.png)
