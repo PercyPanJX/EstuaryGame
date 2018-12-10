@@ -19,4 +19,4 @@ Game Vedio:
 alt="VEDIO" width="1000" height="600" border="10" /></a>
 
 The whole program UML
-![alt text](UML/UML.png)
+![alt text](UML.png)
