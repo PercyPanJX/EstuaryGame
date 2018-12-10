@@ -1,12 +1,5 @@
 package MNGMVC;
-
-
-
 import java.util.Random;
-
-import javax.swing.Timer;
-
-import EDUMVC.EduElements;
 import SUPERMVC.Model;
 
 /**
@@ -286,11 +279,6 @@ public class MngModel extends Model{
 		
 	
 	}
-	
-
-	
-
-
 	
 	/**
 	 *  this is the necessary information the view needs to get through controller

@@ -4,34 +4,22 @@ import java.io.Serializable;
 
 public enum ManageGameState implements Serializable{
 	
-	WAITING("waitingtime"),
+	WAITING,
 	
-	COVERTIME("covertime"),
+	COVERTIME,
 	
-	RULETIME("ruletime"),
+	RULETIME,
 	
-	RULETIME2("ruletime2"),
+	RULETIME2,
 	
-	RULETIME3("ruletime3"),
+	BEGINNING,
 	
-	BEGINNING("beginning"),
+	GAMETIME,
 	
-	GAMETIME("gametime"),
+	ENDTIME,
 	
-	ENDTIME("endtime"),
+	SCORETIME,
 	
-	SCORETIME("scoretime"),
-	
-	GAMESTOP("stop");
-	
-	
-	
-	private String name = null;
-	
-	private ManageGameState(String s){
-		name = s;
-	}
-	public String getName() {
-		return name;
-	}
+	GAMESTOP;
+
 }

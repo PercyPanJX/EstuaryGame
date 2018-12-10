@@ -334,18 +334,44 @@ class GameTest {
 		}
 		
 		model.chooseTool(Tool.REPORT);
-		
 		model.checkSelection(Tool.REPORT);
+		e.GameState = ManageGameState.GAMETIME;
+		e.spotsNum = 2;
+		e.trashNum = 5;
+		e.invasiveNum = 2;
+		model.loadGame(e);
+		model.chooseTool(Tool.TRASH);
+		model.checkSelection(Tool.TRASH);
+		model.updateModel();
 
+		model.chooseTool(Tool.SPRAY);
 		model.checkSelection(Tool.SPRAY);
+		model.updateModel();
 		
 		e.GameState = ManageGameState.GAMETIME;
 		e.spotsNum = 4;
-		e.trashNum = 10;
+		e.trashNum = 5;
 		e.invasiveNum = 6;
+		e.FishHealthRate = 0.5;
+		e.PlantHealthRate = 0.1;
+		model.loadGame(e);
+		model.gameOver();
+		System.out.println(model.getElements().PlantHealthRate);
+		
+		e.EstuaryTime = 0.0;
+		e.GameState = ManageGameState.GAMETIME;
 		model.loadGame(e);
 		model.updateModel();
-		model.gameOver();
+		
+		e.EstuaryTime = 0.5;
+		e.GameState = ManageGameState.GAMETIME;
+		e.spotsNum = 0;
+		e.trashNum = 0;
+		e.invasiveNum = 0;
+		model.loadGame(e);
+		for(int i = 0; i < 1000; i++) {
+			model.updateModel();
+		}
 		
 	}
 	

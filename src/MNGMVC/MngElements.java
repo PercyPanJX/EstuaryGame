@@ -14,12 +14,11 @@ public class MngElements implements Serializable {
 		//Tool States mouse
 		public Tool tool;
 		
-		
 		//fish health
-		public double FishHealthRate = 0.1;
+		public double FishHealthRate;
 		
 		//plant health
-		public double PlantHealthRate = 0.1;
+		public double PlantHealthRate;
 		
 		
 		public double DarkCoverTimer;
@@ -29,6 +28,19 @@ public class MngElements implements Serializable {
 		public boolean isGameOver;
 		
 		
+		/**
+		 * management elements saving
+		 * @param GS game state
+		 * @param ET estuary time
+		 * @param T tool
+		 * @param FH fishhealth rate
+		 * @param PH plant health rate
+		 * @param TN trash number
+		 * @param IN invasive number
+		 * @param SN spots number
+		 * @param DCT dark cover timer 
+		 * @param GO is game over or not
+		 */
 		MngElements(ManageGameState GS, double ET,
 				Tool T, double FH, double PH,
 				int TN, int IN, int SN,

@@ -37,15 +37,9 @@ public class ReaView extends View{
 	double rolly;
 	
 	ResearchGameState isGame = ResearchGameState.WAITING;
-	
-	
-	
+
 	// panels that are needed 
 	WholePanel wholePanel;
-	//RulePanel rulePanel;
-	//GamePanel gamePanel;
-	//EndPanel endPanel;
-	//InfoPanel infoPanel;
 	
 	// game state
 	private ResearchGameState GameState;
@@ -127,9 +121,6 @@ public class ReaView extends View{
 		saveButton.setOpaque(false);
 		saveButton.setBackground(null);
 		saveButton.setCursor(c);
-
-		//set hand cursor for buttons
-		//NextButton.setCursor(new Cursor(Cursor.HAND_CURSOR)); 
 	}
 		
 	//show the cover for the game
@@ -510,9 +501,6 @@ public class ReaView extends View{
 				Toolkit toolkit = Toolkit.getDefaultToolkit();
 				Cursor c = toolkit.createCustomCursor(CursorImg, new Point(0,0), "custom cursor");
 				sampleButtons[i].setCursor(c);
-
-				//set hand cursor for buttons
-				//sampleButtons[i].setCursor(new Cursor(Cursor.HAND_CURSOR));
 			}
 			
 			// samples on the score page
@@ -528,21 +516,9 @@ public class ReaView extends View{
 				this.add(sampleButtons[4],gbc4sample5);
 				GridBagConstraints gbc4sample6 = createGridConstraints((int) (scaleRateH * 50),(int) (scaleRateW * 750),0,0,GridBagConstraints.CENTER);
 				this.add(sampleButtons[5],gbc4sample6);
-				/*
-				GridBagConstraints gbc4sample7 = createGridConstraints(275,0,0,175,GridBagConstraints.CENTER);
-				this.add(sampleButtons[6],gbc4sample7);
-				GridBagConstraints gbc4sample8 = createGridConstraints(275,0,0,0,GridBagConstraints.CENTER);
-				this.add(sampleButtons[7],gbc4sample8);
-				GridBagConstraints gbc4sample9 = createGridConstraints(275,175,0,0,GridBagConstraints.CENTER);
-				this.add(sampleButtons[8],gbc4sample9);
-				GridBagConstraints gbc4sample10 = createGridConstraints(275,350,0,0,GridBagConstraints.CENTER);
-				this.add(sampleButtons[9],gbc4sample10);
-			*/
+				
 		}
-
-
 		
-
 		/**
 		 * set cursor image back to normal image
 		 */
@@ -551,13 +527,12 @@ public class ReaView extends View{
 			
 		}
 
-
 		/**
 		 * set cursor image to an arrow
 		 */
 		public void curserDown() {
 			Toolkit toolkit = Toolkit.getDefaultToolkit();
-			Cursor c = toolkit.createCustomCursor(downImg, new Point(0,0), "custom cursor");
+			Cursor c = toolkit.createCustomCursor(downImg, new Point(downImg.getWidth()/2,downImg.getHeight()/2), "custom cursor");
 			this.setCursor(c);
 			
 		}
@@ -592,16 +567,12 @@ public class ReaView extends View{
 				
 			//initial the elements for the class environment
 			createGame();
-
-			
+	
 			// initiate the score page
 			createScore();
 			
-			
 			// create the info page
-			createInfo();
-				
-			
+			createInfo();		
 		}
 		
 		
@@ -660,15 +631,12 @@ public class ReaView extends View{
 			this.setLayout(new GridBagLayout());
 					
 			//button adding
-			
 			GridBagConstraints gbc4Bottons = createGridConstraints((int) (scaleRateH * 590),(int) (scaleRateW * 1090),0,0,GridBagConstraints.CENTER);			
 			this.add(NextButton,gbc4Bottons);
-			GridBagConstraints gbc4Save = createGridConstraints((int) (scaleRateH * 590),0,0,(int) (scaleRateW * 1090),GridBagConstraints.CENTER);			
+			GridBagConstraints gbc4Save = createGridConstraints(0,0,0,0,GridBagConstraints.NORTHEAST);			
 			this.add(saveButton,gbc4Save);
 		}
 		
-		
-		// create the cover page
 		/**
 		 * create the cover page
 		 */
